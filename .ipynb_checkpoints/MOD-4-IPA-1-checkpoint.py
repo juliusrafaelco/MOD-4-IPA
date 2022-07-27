@@ -148,7 +148,7 @@ def relationship_status(from_member, to_member, social_graph):
     # Replace `pass` with your code. 
     # Stay within the function. Only use the parameters as input. The function should return your answer.
     from_following = social_gr[from_member]["following"]
-    to_follow = social_gr[to_member][["following"]
+    to_follow = social_gr[to_member]["following"]
     if from_member in to_follow and to_member in from_following:
         return "friends ^.^"
     elif from_member in to_follow:
